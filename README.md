@@ -39,7 +39,7 @@ IK-portfolio/
 ---
 
 ## 🌐 Live Demo
-👉 [View Portfolio](https://ishantkundra.github.io/IK-portfolio/)
+👉 [View Portfolio](https://ikportfolio.vercel.app/#contact)
 
 ---
 
