@@ -1,53 +1,56 @@
-# 🌐 IK Portfolio
 
-This is my **personal portfolio website** showcasing my projects, technical skills, work experience, and contact information.
+# IK Portfolio - React + Vite
 
-Developed by **Ishant Kundra**  
-📍 Texas A&M University – M.S. Computer Science
+This is a personal portfolio website built using **React** and **Vite**. The portfolio showcases my projects, technical skills, work experience, and contact information.
 
 ---
 
-## 🚀 Live Demo
-
-👉 [Visit the Portfolio](https://ishantkundra.github.io/IK-portfolio/)
-
----
-
-## 🎯 Project Overview
-
-| Item              | Description                                 |
-|-------------------|---------------------------------------------|
-| 🌟 **Purpose**     | Showcase professional work and projects      |
-| 💻 **Built With**  | HTML, CSS, JavaScript                        |
-| 🌐 **Deployment**  | GitHub Pages                                 |
-| 📱 **Features**    | Responsive design, project gallery, contact section |
+## 🚀 Features
+- Responsive design
+- Interactive project showcase
+- Contact section
+- Smooth navigation
 
 ---
 
-## 📁 Repository Structure
+## 📂 Tech Stack
+- React
+- Vite
+- JavaScript
+- HTML & CSS
 
+---
+
+## 📂 Folder Structure
 <pre>
-📦 IK-portfolio
-│
-├── assets/                # Images, icons, and static files
-├── css/                   # CSS files
-├── js/                    # JavaScript files
-├── index.html             # Main HTML file
-├── README.md              # ← You're here!
-└── .gitignore             # Files to ignore in Git
+IK-portfolio/
+├── public/             # Static files
+├── src/                # Source files
+│   ├── assets/         # Images and icons
+│   ├── components/     # React components
+│   ├── App.jsx         # Main React app
+│   └── main.jsx        # Vite entry point
+├── package.json        # Project metadata and dependencies
+├── index.html          # Main HTML file
+├── README.md           # Project documentation
+└── .gitignore          # Git ignored files
 </pre>
 
 ---
 
-## 🛠️ How to Run Locally
+## 🌐 Live Demo
+👉 [View Portfolio](https://ishantkundra.github.io/IK-portfolio/)
 
+---
 
-# Step 1: Clone the repository
-```bash
-git clone https://github.com/ishantkundra/IK-portfolio.git
-```
-# Step 2: Navigate to the project folder
-```bash
-cd IK-portfolio
-```
-# Step 3: Open index.html in your browser
+## 🙌 Acknowledgements
+- Bootstrapped with [Vite](https://vitejs.dev/)
+- Inspired by modern portfolio templates and React development practices
+
+---
+
+## 📬 Contact
+📧 **Email:** ishantkundra9@gmail.com  
+🔗 **LinkedIn:** [Ishant Kundra](https://www.linkedin.com/in/ishantkundra/)
+
+---
