@@ -41,11 +41,13 @@ Developed by **Ishant Kundra**
 
 ## 🛠️ How to Run Locally
 
-```bash
+
 # Step 1: Clone the repository
+```bash
 git clone https://github.com/ishantkundra/IK-portfolio.git
-
+```
 # Step 2: Navigate to the project folder
+```bash
 cd IK-portfolio
-
+```
 # Step 3: Open index.html in your browser
