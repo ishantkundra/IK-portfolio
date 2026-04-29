@@ -46,9 +46,9 @@ import {
 import jio from "../assets/company/jio.png";
 import impetus from "../assets/company/impetus.png";
 import cartesian from "../assets/company/cartesian.png";
-import ouraim from "../assets/company/ouraim.png";
-import zodiac from "../assets/company/zodiac.png";
-import econiq from "../assets/econiq.png";
+import ouraim from "../assets/company/OurAimFoundation.png";
+import zodiac from "../assets/company/Zodiac.png";
+import econiq from "../assets/EconIQ.png";
 import huggingface from "../assets/tech/huggingface.svg";
 
 export const navLinks = [{
@@ -110,12 +110,13 @@ const experiences = [
         title: "AI Engineer",
         company_name: "Our Aim Foundation (US 501c3 Nonprofit)",
         icon: ouraim,
-        iconBg: "#1a2a3a",
+        iconBg: "#1a3a2a",
         date: "Jul. 2025 – Present",
         points: [
-            "Architected an end-to-end RAG pipeline using LangChain, ChromaDB, and Gemini LLM with semantic chunking and prompt engineering — cut EMR data retrieval time by 45% for humanitarian healthcare programs.",
-            "Automated clinical report generation for field medical teams, eliminating manual lookups and reducing reporting overhead for staff serving underserved communities.",
-            "Designed multi-stage document ingestion with custom chunking strategies to handle heterogeneous medical record formats and improve retrieval precision.",
+            "Developed and deployed a web-based RAG chatbot over an EMR hospital dataset using LangChain, ChromaDB, and Gemini LLM — cut data retrieval time by 45% and improved accessibility for healthcare professionals.",
+            "Designed semantic chunking and prompt engineering strategies to streamline clinical data analysis and workflow automation, reducing data processing time by 30%.",
+            "Automated clinical report generation for humanitarian healthcare field teams, eliminating manual lookups and improving operational efficiency across programs.",
+            "Collaborated with cross-functional teams to integrate AI solutions seamlessly into existing healthcare infrastructure.",
         ],
     },
     {
@@ -125,9 +126,10 @@ const experiences = [
         iconBg: "#002147",
         date: "Jun. 2024 – Aug. 2024",
         points: [
-            "Lifted spoken language identification accuracy from 75% to 91% across 22 Indian languages by fine-tuning IndicWav2Vec with PyTorch and Hugging Face Transformers on domain-specific speech corpora.",
-            "Built a scalable MLOps/CI-CD pipeline that cut model iteration time by 30% and automated ingestion of 100+ hours/day of speech data using Voice Activity Detection (VAD) preprocessing.",
-            "Collaborated with data and infra teams to deploy production-grade multilingual NLP systems handling real-time speech classification at scale across Jio's telecom infrastructure.",
+            "Independently built a multilingual speech processing pipeline for language identification — sourced large-scale data by bulk downloading YouTube videos and extracting speech segments across 22 Indian languages.",
+            "Preprocessed audio using Voice Activity Detection (VAD), noise reduction, and chunking (pydub, librosa, torchaudio) to ensure clean signals; improved classification accuracy by 20% using IndicWav2Vec and Hugging Face Transformers.",
+            "Designed an end-to-end ML pipeline in a Conda environment integrating PyTorch, TensorFlow, and Transformers for scalable training and inference; reduced preprocessing time by 30% via parallelized multiprocessing.",
+            "Deployed model inference tools for spoken language identification, enabling better accessibility for diverse linguistic groups; managed reproducibility via GitHub and Google Colab documentation.",
         ],
     },
     {
@@ -137,21 +139,23 @@ const experiences = [
         iconBg: "#0a0a0a",
         date: "May 2023 – May 2024",
         points: [
-            "Deployed demand forecasting pipelines on 1.2M+ records using FastAPI, Docker, and SQL ETL workflows — drove 25% gain in demand accuracy and reduced stock shortages by 30%.",
-            "Engineered a pricing optimization module with Tableau and Power BI dashboards adopted by 10+ business stakeholders, cutting manual reporting time by 40%.",
-            "Led end-to-end ML lifecycle from data preprocessing and feature engineering through model deployment and monitoring, applying scikit-learn and PySpark for large-scale structured data.",
+            "Deployed end-to-end sales forecasting pipelines (Python, scikit-learn) on 1.2M+ transaction records via REST API to procurement systems, improving export demand planning accuracy by ~25%.",
+            "Productionized demand prediction models incorporating seasonality signals and regional trade data; containerized with Docker and integrated into SQL-driven ETL workflows, reducing stock shortages by ~30%.",
+            "Built a pricing optimization module surfacing export strategies via Power BI/Tableau dashboards for business stakeholders, cutting manual reporting time by 40%.",
+            "Automated data processing pipelines using Python and SQL to clean and aggregate large trade datasets, significantly reducing manual reporting overhead.",
         ],
     },
     {
         title: "Project Trainee Intern",
-        company_name: "Impetus Technologies",
+        company_name: "ClearTrail Technologies",
         icon: impetus,
         iconBg: "#1a1a2e",
         date: "Dec. 2021 – Jun. 2022",
         points: [
-            "Built a hybrid CNN + BERT fake-profile detection pipeline on 30K+ social media profiles — improved detection from 58% to 70% accuracy, reduced false positives by 28%, and cut manual validation effort by 40%.",
-            "Benchmarked 4 ML models (CNN, BERT, SVM, Logistic Regression) and engineered features from follower ratios, post patterns, TF-IDF, and chat embeddings; published findings in JETIR.",
-            "Designed and deployed the model using Python, TensorFlow, Flask, and Scikit-learn; contributed to production code reviewed by senior ML engineers.",
+            "Developed and optimized ML models for fake profile detection — compared CNN, KNN, Random Forest, and Logistic Regression; CNN achieved 70% accuracy with 25% fewer false positives.",
+            "Engineered a feature-based classification system analyzing follower/follow-back ratios, mutual connections, post activity, account engagement, and chat keywords (TF-IDF, BERT) for pattern recognition.",
+            "Built a hybrid detection approach combining image-based CNN analysis (profile picture validation) and NLP text techniques, improving model interpretability and trust.",
+            "Deployed models using Python, Scikit-learn, TensorFlow, and Flask; published research in JETIR detailing methodology and future scalability enhancements including face verification and government ID-based authentication.",
         ],
     },
     {
@@ -159,13 +163,16 @@ const experiences = [
         company_name: "Cartesian Consulting",
         icon: cartesian,
         iconBg: "#1a2540",
-        date: "Jul. 2021 – Aug. 2021",
+        date: "Jul. 2021 – Sep. 2021",
         points: [
-            "Built a collaborative filtering + K-Means clustering recommendation engine on large-scale transaction data for 80K+ customers, boosting cross-sell engagement by 12% and forecast accuracy by 10%.",
-            "Worked alongside senior data scientists to preprocess and transform retail transaction datasets, applying SQL and Python pipelines for feature extraction and model training.",
+            "Collaborated with data scientists and engineers to develop a demand forecasting system — contributed to model selection and preprocessing, improving forecast accuracy by 10%.",
+            "Assisted in building a Cross-Sell & Up-Sell recommendation engine using collaborative filtering, association rule mining (Apriori, FP-Growth), and K-Means clustering to enhance targeted marketing.",
+            "Supported data pipeline design and optimization for large-scale transaction data; contributed to Tableau and Matplotlib dashboards presenting business insights to stakeholders.",
+            "Gained hands-on experience with Python, Pandas, NumPy, and Scikit-learn for feature engineering, EDA, and model evaluation under senior mentorship.",
         ],
     },
 ];
+
 
 const projects = [
     {

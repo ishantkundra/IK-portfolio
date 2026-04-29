@@ -45,9 +45,9 @@ import express from "./tech/express.png";
 import jio from "./company/jio.png";
 import impetus from "./company/impetus.png";
 import cartesian from "./company/cartesian.png";
-import ouraim from "./company/ouraim.png";
-import zodiac from "./company/zodiac.png";
-import econiq from "./econiq.png";
+import ouraim from "./company/OurAimFoundation.png";
+import zodiac from "./company/Zodiac.png";
+import econiq from "./EconIQ.png";
 import huggingface from "./tech/huggingface.svg";
 
 import guiproj from "./guiproj.png";
