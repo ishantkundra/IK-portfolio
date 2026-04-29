@@ -23,7 +23,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}> I am a
           <span style={{ color: '#915eff' }}>
           <Typewriter className="text"
-              words={[' <AI/ML Engineer/>..', ' <Full Stack Developer/>..', ' <Power BI Developer/>..', ' <Embedded Systems Engineer/>..']}
+              words={[' <AI/ML Engineer/>..', ' <LLM & RAG Engineer/>..', ' <ML Ops Engineer/>..', ' <NLP Engineer/>..']}
               cursorColor='#915eff'
               loop
               cursor

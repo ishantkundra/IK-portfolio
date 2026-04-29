@@ -66,16 +66,16 @@ const services = [{
         icon: aiml,
     },
     {
-        title: "Full-stack Developer",
-        icon: creator,
+        title: "LLM & RAG Engineer",
+        icon: aiml,
     },
     {
-        title: "Backend Developer",
+        title: "MLOps Engineer",
         icon: backend,
     },
     {
-        title: "Frontend Developer",
-        icon: web,
+        title: "NLP Engineer",
+        icon: creator,
     },
 ];
 
@@ -86,54 +86,65 @@ const rm = {
 
 const technologies = [
     { name: "Python", icon: python },
-    { name: "Java", icon: java },
+    { name: "PyTorch", icon: pytorch },
+    { name: "TensorFlow", icon: tensorflow },
+    { name: "Keras", icon: keras },
+    { name: "Hugging Face", icon: spacy },
+    { name: "OpenCV", icon: opencv },
+    { name: "NLTK", icon: nltk },
+    { name: "SpaCy", icon: spacy },
     { name: "JavaScript", icon: javascript },
-    { name: "React JS", icon: reactjs },
-    { name: "HTML 5", icon: html },
-    { name: "CSS 3", icon: css },
-    { name: "Node JS", icon: nodejs },
-    { name: "MongoDB", icon: mongodb },
-    { name: "PostgreSQL", icon: postgresql }, 
-    { name: "MySQL", icon: mysql },
-    { name: "C", icon: c },
-    { name: "C++", icon: cpp },
-    { name: "git", icon: git },
+    { name: "SQL", icon: postgresql },
     { name: "Docker", icon: docker },
-    { name: "Flask", icon: flask }, 
-    { name: "TensorFlow", icon: tensorflow }, 
-    { name: "PyTorch", icon: pytorch }, 
-    { name: "Keras", icon: keras }, 
-    { name: "D3.js", icon: d3 }, 
-    { name: "Chart.js", icon: chart }, 
-    { name: "OpenCV", icon: opencv }, 
-    { name: "NLTK", icon: nltk }, 
-    { name: "Spacy", icon: spacy }, 
+    { name: "Git", icon: git },
+    { name: "Flask", icon: flask },
+    { name: "MongoDB", icon: mongodb },
+    { name: "PostgreSQL", icon: postgresql },
 ];
 
 const experiences = [
     {
+        title: "AI Engineer",
+        company_name: "Our Aim Foundation",
+        icon: jio,
+        iconBg: "#383E56",
+        date: "Jul. 2025 – Present",
+        points: [
+            "Cut EMR data retrieval time by 45% by building a RAG pipeline (LangChain, ChromaDB, Gemini LLM) with semantic chunking and prompt engineering.",
+            "Automated clinical report generation for humanitarian healthcare programs, eliminating manual data lookups for medical staff.",
+        ],
+    },
+    {
         title: "AI/ML Intern",
         company_name: "Reliance Jio AICOE",
-        icon: jio, // Replace with Reliance Jio logo if available
+        icon: jio,
         iconBg: "#383E56",
         date: "Jun. 2024 – Aug. 2024",
         points: [
-            "Engineered an end-to-end scalable language identification system, improving accuracy by 20% across 22 Indian languages, leveraging Python, PyTorch, TensorFlow, and advanced NLP techniques with automated data pipelines for data collection, preprocessing, and model optimization.",
-            "Processed and cleaned 1,200+ audio files using Voice Activity Detection (VAD), denoising algorithms, and audio chunking, generating 95% clean data to enhance model training efficiency.",
-            "Developed and fine-tuned language classification models using IndicWav2Vec and Hugging Face Transformers, boosting prediction accuracy by 20% and achieving an F1-score of 0.91.",
-            "Conceptualized data pipelines that processed over 1,000+ hours of multilingual audio and reduced manual preprocessing time by 60%."
+            "Lifted language ID accuracy from 75% to 91% across 22 Indian languages using IndicWav2Vec, PyTorch, and Hugging Face Transformers; applied fine-tuning on domain-specific speech corpora.",
+            "Slashed model iteration time by 30% via a scalable MLOps/CI-CD pipeline; automated 100+ hours/day speech data ingestion with VAD preprocessing.",
+        ],
+    },
+    {
+        title: "AI/ML Engineer",
+        company_name: "Zodiac Pvt. Ltd.",
+        icon: impetus,
+        iconBg: "#E6DEDD",
+        date: "May 2023 – May 2024",
+        points: [
+            "Drove 25% gain in demand accuracy and cut stock shortages by 30% by deploying forecasting pipelines on 1.2M+ records via FastAPI with Docker and SQL ETL workflows.",
+            "Reduced manual reporting time by 40% by delivering a pricing optimization module via Tableau/Power BI dashboards for 10+ stakeholders.",
         ],
     },
     {
         title: "Project Trainee Intern",
         company_name: "Impetus Technologies",
-        icon: impetus, 
+        icon: impetus,
         iconBg: "#E6DEDD",
         date: "Dec. 2021 – Jun. 2022",
         points: [
-            "Architected ML-based profile detection system for 20,000+ user profiles, achieving 70% accuracy and improving detection speed by 40%.",
-            "Crafted a hybrid detection system combining image-based verification (CNN for profile picture analysis) with NLP techniques (TF-IDF, BERT) to analyze chat behavior, improving model interpretability and trust.",
-            "Deployed scalable solutions using Python, Scikit-learn, TensorFlow, and Flask; published findings in JETIR, detailing methodology and future extensions including biometric and document-based verification."
+            "Reduced false positives by 28% and lifted fake-profile detection from 58% to 70% on 30K+ profiles via a hybrid CNN + BERT pipeline; cut manual validation effort by 40%.",
+            "Identified CNN as top performer by benchmarking 4 ML models; engineered features from follower ratios, post activity, and TF-IDF/BERT chat patterns — published in JETIR.",
         ],
     },
     {
@@ -141,16 +152,42 @@ const experiences = [
         company_name: "Cartesian Consulting",
         icon: cartesian,
         iconBg: "#383E56",
-        date: "Jul. 2021 – Sep. 2021",
+        date: "Jul. 2021 – Aug. 2021",
         points: [
-             "Collaborated with a cross-functional team to improve demand forecasting accuracy by 10% through data preprocessing and model selection.",
-             "Supported the development of a recommendation engine with 92% precision@3 using collaborative filtering and clustering techniques.",
-             "Engaged with senior consultants and data scientists to optimize model performance and refine system architecture.",
-  ],
-},
+            "Built a collaborative filtering + K-Means recommendation engine on large-scale transaction data for 80K+ customers; boosted cross-sell engagement by 12% and forecast accuracy by 10%.",
+        ],
+    },
 ];
 
 const projects = [
+    {
+        name: "EconIQ — Economic Intelligence Assistant",
+        description: "🏆 1st Place / 50 Teams — Snowflake × TAMU CSEGSA Hackathon 2026. RAG pipeline over 209,451 chunks from 14 datasets (SEC, Fed Reserve, World Bank, CFPB) with numeric narrativization. Achieved 85% avg confidence and 20/20 eval Q&A. Deployed to Snowflake Model Registry.",
+        tags: [
+            { name: "Snowflake Cortex", color: "blue-text-gradient" },
+            { name: "Mistral-Large", color: "green-text-gradient" },
+            { name: "RAG", color: "pink-text-gradient" },
+            { name: "Arctic Embed", color: "blue-text-gradient" },
+            { name: "Snowpark", color: "green-text-gradient" },
+            { name: "Streamlit", color: "pink-text-gradient" },
+        ],
+        image: neurostockviz,
+        source_code_link: "https://github.com/ishantkundra/EconAI---Economic-Intelligence-Assistant-SnowFlake-Hackathon-",
+    },
+    {
+        name: "AIChamp — RL Hyperparameter Tuning Task",
+        description: "Agentic RL environment that teaches LLMs iterative experimentation via grid search over hyperparameter combinations. The agent must evaluate 12+ configs using run_experiment tools and submit the best-performing configuration. Tuned for ~30% pass rate across trials using the Anthropic API.",
+        tags: [
+            { name: "Reinforcement Learning", color: "blue-text-gradient" },
+            { name: "Agentic AI", color: "green-text-gradient" },
+            { name: "Anthropic API", color: "pink-text-gradient" },
+            { name: "Python", color: "blue-text-gradient" },
+            { name: "Grid Search", color: "green-text-gradient" },
+            { name: "Tool Use", color: "pink-text-gradient" },
+        ],
+        image: aiplayspokemonred,
+        source_code_link: "https://github.com/ishantkundra/AIChamp",
+    },
     {
         name: "NeuroStockViz",
         description: "Developed a full-stack web-based analytics system to visualize stock correlations using neural network graphs, time-series line charts, heatmaps, and candlestick charts. Implemented dynamic filtering and real-time data updates to help financial analysts uncover complex stock relationships.",

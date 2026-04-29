@@ -37,7 +37,7 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
           >
-            I am a passionate AI and Software Engineer, deeply driven to build intelligent, scalable solutions. With extensive project experience in machine learning, reinforcement learning, NLP, embedded systems, and full-stack development, I aim to push the boundaries of technology. I have successfully built interactive dashboards, autonomous agents, real-time systems, and production-ready applications across diverse domains like gaming, automotive, and IoT.
+            I am an AI/ML Engineer with 3+ years of experience building production-grade intelligent systems — from RAG pipelines and LLM applications to multilingual NLP models and recommendation engines. I hold an MS in Computer Science from Texas A&M University and have shipped models at scale at Reliance Jio AICOE, Zodiac, and Impetus Technologies. Passionate about turning cutting-edge research into real-world AI products that are fast, reliable, and impactful.
           </motion.p>
 
           {/* link to download my resume */}
