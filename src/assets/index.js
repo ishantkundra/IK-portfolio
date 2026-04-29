@@ -6,7 +6,7 @@ import close from "./close.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import web from "./web.png";
-import aiml from "./ai:ml.png";
+import aiml from "./aiml.png";
 
 import ishantImage from "./ishant.jpg";
 import resume from "./ishant_cv.pdf";
