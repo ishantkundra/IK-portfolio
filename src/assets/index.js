@@ -45,6 +45,10 @@ import express from "./tech/express.png";
 import jio from "./company/jio.png";
 import impetus from "./company/impetus.png";
 import cartesian from "./company/cartesian.png";
+import ouraim from "./company/ouraim.png";
+import zodiac from "./company/zodiac.png";
+import econiq from "./econiq.png";
+import huggingface from "./tech/huggingface.svg";
 
 import guiproj from "./guiproj.png";
 import deliveryproj from "./deliveryproj.png";
@@ -119,4 +123,8 @@ export {
     opencv,
     nltk,
     spacy,
+    ouraim,
+    zodiac,
+    econiq,
+    huggingface,
 };

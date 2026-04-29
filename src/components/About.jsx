@@ -75,7 +75,7 @@ const About = () => {
               <div className="flex-1 glowing-border p-4 rounded-lg">
                 <h4 className="text-white text-[18px] font-semibold mb-2">Experience</h4>
                 <p className="text-secondary text-[13px]">
-                  1+ years of experience in AI/ML and Software Engineering
+                  3+ years of experience in AI/ML Engineering — RAG, LLMs, NLP, MLOps & Production ML
                 </p>
               </div>
 

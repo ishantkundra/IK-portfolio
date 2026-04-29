@@ -46,6 +46,10 @@ import {
 import jio from "../assets/company/jio.png";
 import impetus from "../assets/company/impetus.png";
 import cartesian from "../assets/company/cartesian.png";
+import ouraim from "../assets/company/ouraim.png";
+import zodiac from "../assets/company/zodiac.png";
+import econiq from "../assets/econiq.png";
+import huggingface from "../assets/tech/huggingface.svg";
 
 export const navLinks = [{
         id: "about",
@@ -89,72 +93,76 @@ const technologies = [
     { name: "PyTorch", icon: pytorch },
     { name: "TensorFlow", icon: tensorflow },
     { name: "Keras", icon: keras },
-    { name: "Hugging Face", icon: spacy },
+    { name: "Hugging Face", icon: huggingface },
     { name: "OpenCV", icon: opencv },
     { name: "NLTK", icon: nltk },
     { name: "SpaCy", icon: spacy },
     { name: "JavaScript", icon: javascript },
-    { name: "SQL", icon: postgresql },
+    { name: "SQL / PostgreSQL", icon: postgresql },
     { name: "Docker", icon: docker },
     { name: "Git", icon: git },
     { name: "Flask", icon: flask },
     { name: "MongoDB", icon: mongodb },
-    { name: "PostgreSQL", icon: postgresql },
 ];
 
 const experiences = [
     {
         title: "AI Engineer",
-        company_name: "Our Aim Foundation",
-        icon: jio,
-        iconBg: "#383E56",
+        company_name: "Our Aim Foundation (US 501c3 Nonprofit)",
+        icon: ouraim,
+        iconBg: "#1a2a3a",
         date: "Jul. 2025 – Present",
         points: [
-            "Cut EMR data retrieval time by 45% by building a RAG pipeline (LangChain, ChromaDB, Gemini LLM) with semantic chunking and prompt engineering.",
-            "Automated clinical report generation for humanitarian healthcare programs, eliminating manual data lookups for medical staff.",
+            "Architected an end-to-end RAG pipeline using LangChain, ChromaDB, and Gemini LLM with semantic chunking and prompt engineering — cut EMR data retrieval time by 45% for humanitarian healthcare programs.",
+            "Automated clinical report generation for field medical teams, eliminating manual lookups and reducing reporting overhead for staff serving underserved communities.",
+            "Designed multi-stage document ingestion with custom chunking strategies to handle heterogeneous medical record formats and improve retrieval precision.",
         ],
     },
     {
         title: "AI/ML Intern",
         company_name: "Reliance Jio AICOE",
         icon: jio,
-        iconBg: "#383E56",
+        iconBg: "#002147",
         date: "Jun. 2024 – Aug. 2024",
         points: [
-            "Lifted language ID accuracy from 75% to 91% across 22 Indian languages using IndicWav2Vec, PyTorch, and Hugging Face Transformers; applied fine-tuning on domain-specific speech corpora.",
-            "Slashed model iteration time by 30% via a scalable MLOps/CI-CD pipeline; automated 100+ hours/day speech data ingestion with VAD preprocessing.",
+            "Lifted spoken language identification accuracy from 75% to 91% across 22 Indian languages by fine-tuning IndicWav2Vec with PyTorch and Hugging Face Transformers on domain-specific speech corpora.",
+            "Built a scalable MLOps/CI-CD pipeline that cut model iteration time by 30% and automated ingestion of 100+ hours/day of speech data using Voice Activity Detection (VAD) preprocessing.",
+            "Collaborated with data and infra teams to deploy production-grade multilingual NLP systems handling real-time speech classification at scale across Jio's telecom infrastructure.",
         ],
     },
     {
         title: "AI/ML Engineer",
         company_name: "Zodiac Pvt. Ltd.",
-        icon: impetus,
-        iconBg: "#E6DEDD",
+        icon: zodiac,
+        iconBg: "#0a0a0a",
         date: "May 2023 – May 2024",
         points: [
-            "Drove 25% gain in demand accuracy and cut stock shortages by 30% by deploying forecasting pipelines on 1.2M+ records via FastAPI with Docker and SQL ETL workflows.",
-            "Reduced manual reporting time by 40% by delivering a pricing optimization module via Tableau/Power BI dashboards for 10+ stakeholders.",
+            "Deployed demand forecasting pipelines on 1.2M+ records using FastAPI, Docker, and SQL ETL workflows — drove 25% gain in demand accuracy and reduced stock shortages by 30%.",
+            "Engineered a pricing optimization module with Tableau and Power BI dashboards adopted by 10+ business stakeholders, cutting manual reporting time by 40%.",
+            "Led end-to-end ML lifecycle from data preprocessing and feature engineering through model deployment and monitoring, applying scikit-learn and PySpark for large-scale structured data.",
         ],
     },
     {
         title: "Project Trainee Intern",
         company_name: "Impetus Technologies",
         icon: impetus,
-        iconBg: "#E6DEDD",
+        iconBg: "#1a1a2e",
         date: "Dec. 2021 – Jun. 2022",
         points: [
-            "Reduced false positives by 28% and lifted fake-profile detection from 58% to 70% on 30K+ profiles via a hybrid CNN + BERT pipeline; cut manual validation effort by 40%.",
-            "Identified CNN as top performer by benchmarking 4 ML models; engineered features from follower ratios, post activity, and TF-IDF/BERT chat patterns — published in JETIR.",
+            "Built a hybrid CNN + BERT fake-profile detection pipeline on 30K+ social media profiles — improved detection from 58% to 70% accuracy, reduced false positives by 28%, and cut manual validation effort by 40%.",
+            "Benchmarked 4 ML models (CNN, BERT, SVM, Logistic Regression) and engineered features from follower ratios, post patterns, TF-IDF, and chat embeddings; published findings in JETIR.",
+            "Designed and deployed the model using Python, TensorFlow, Flask, and Scikit-learn; contributed to production code reviewed by senior ML engineers.",
         ],
     },
     {
         title: "Software Developer Intern",
         company_name: "Cartesian Consulting",
         icon: cartesian,
-        iconBg: "#383E56",
+        iconBg: "#1a2540",
         date: "Jul. 2021 – Aug. 2021",
         points: [
-            "Built a collaborative filtering + K-Means recommendation engine on large-scale transaction data for 80K+ customers; boosted cross-sell engagement by 12% and forecast accuracy by 10%.",
+            "Built a collaborative filtering + K-Means clustering recommendation engine on large-scale transaction data for 80K+ customers, boosting cross-sell engagement by 12% and forecast accuracy by 10%.",
+            "Worked alongside senior data scientists to preprocess and transform retail transaction datasets, applying SQL and Python pipelines for feature extraction and model training.",
         ],
     },
 ];
@@ -171,7 +179,7 @@ const projects = [
             { name: "Snowpark", color: "green-text-gradient" },
             { name: "Streamlit", color: "pink-text-gradient" },
         ],
-        image: neurostockviz,
+        image: econiq,
         source_code_link: "https://github.com/ishantkundra/EconAI---Economic-Intelligence-Assistant-SnowFlake-Hackathon-",
     },
     {
@@ -185,7 +193,7 @@ const projects = [
             { name: "Grid Search", color: "green-text-gradient" },
             { name: "Tool Use", color: "pink-text-gradient" },
         ],
-        image: aiplayspokemonred,
+        image: github,
         source_code_link: "https://github.com/ishantkundra/AIChamp",
     },
     {
