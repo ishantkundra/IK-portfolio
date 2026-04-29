@@ -41,6 +41,7 @@ import {
     yelp,
     pokemongoandbaseball,
     uta,
+    github,
 } from "../assets";
 
 import jio from "../assets/company/jio.png";
