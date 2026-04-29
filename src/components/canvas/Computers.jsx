@@ -8,7 +8,7 @@ import CanvasLoader from '../Loader';
 // 3d Geometry
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf');
+  const computer = useGLTF('/desktop_pc/scene.gltf');
   const meshRef = useRef();
   
   // Add error handling for the model
@@ -122,13 +122,13 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='always' // Enable continuous rendering for smooth animations
+      frameloop='always'
       shadows 
       camera={{position:[20, 3, 5], fov: 25}}
       gl={{
         preserveDrawingBuffer: true,
-        antialias: false, // Disable for better performance and fewer context issues
-        alpha: true, // Enable transparency to show background
+        antialias: false,
+        alpha: true,
         powerPreference: "high-performance",
         failIfMajorPerformanceCaveat: false,
         stencil: false,
@@ -145,7 +145,6 @@ const ComputersCanvas = () => {
       }}
     >
        <Suspense fallback={<CanvasLoader/>}>
-        {/* canvasloader shows the loading of the Computer canvas 3D element */}
         <OrbitControls 
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
@@ -153,13 +152,12 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile}/>
        </Suspense>
-
        <Preload all/>
     </Canvas>
   )
 }
 
 // Preload the model to prevent loading issues
-useGLTF.preload('./desktop_pc/scene.gltf');
+useGLTF.preload('/desktop_pc/scene.gltf');
 
 export default ComputersCanvas;
